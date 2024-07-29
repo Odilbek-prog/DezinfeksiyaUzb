@@ -1,0 +1,264 @@
+.container-fluid {
+  display: flex !important;
+  justify-content: space-around !important;
+  font-size: 20px;
+  background-color: #ffffff !important;
+}
+.navbar {
+  position: sticky !important;
+  top: -5px;
+  z-index: 999;
+  box-shadow: 2px 0 0 0 black;
+  width: 1470px;
+}
+.navbarimg {
+  height: 88px;
+}
+.navbar-nav {
+  margin-left: 350px;
+}
+#select {
+  margin-right: 300px;
+  font-weight: 600;
+  padding: 5px;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+@mixin fade-transition($element) {
+  -webkit-transition: $element 5s ease-in-out;
+  -moz-transition: $element 5s ease-in-out;
+  -ms-transition: $element 5s ease-in-out;
+  -o-transition: $element 5s ease-in-out;
+  transition: $element 5s ease-in-out;
+}
+
+.shiny {
+  /*  styling */
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-family: Unbounded;
+  display: inline-block;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 13px;
+
+  /*  centering */
+  position: absolute;
+  text-align: center;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: rgb(33, 55, 251);
+  @include fade-transition(background);
+
+  &:hover {
+    background: rgb(102, 116, 243);
+  }
+}
+
+i {
+  /*   positioning */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+
+  /*   gradient   */
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(1%, rgba(255, 255, 255, 0.03)),
+    color-stop(30%, rgba(255, 255, 255, 0.85)),
+    color-stop(50%, rgba(255, 255, 255, 0.85)),
+    color-stop(70%, rgba(255, 255, 255, 0.85)),
+    color-stop(71%, rgba(255, 255, 255, 0.85)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 1%,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 0.85) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+  /*  forming the shine element
+    play around with the width, skew and gradient to get different effects
+  */
+  width: 15%;
+  height: 100%;
+  transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -moz-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+
+  /*  animating it  */
+  animation: move 0.6s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  -webkit-animation: move 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 5s;
+  -moz-transform: skew(-10deg, 0deg);
+  -moz-animation: move 0.6s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 5s;
+  -ms-transform: skew(-10deg, 0deg);
+  -ms-animation: move 0.6s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-delay: 5s;
+  -o-transform: skew(-10deg, 0deg);
+  -o-animation: move 0.6s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-delay: 5s;
+}
+
+/*  */
+@keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 82%;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 82%;
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 88%;
+  }
+}
+
+@-ms-keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 82%;
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 82%;
+  }
+}
