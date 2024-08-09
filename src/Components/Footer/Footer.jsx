@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Footer.css";
+import "./Footer.scss";
 import logo from "../../img/logo.png";
 import location from "../../img/location.webp";
 import arrow from "../../img/arrow-up-right.svg";

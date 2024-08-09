@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Contact.css";
+import "./Contact.scss";
 import person from "../../img/contact.png";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Main.css";
+import "./Main.scss";
 import first from "../../img/first.png";
 import second from "../../img/second.png";
 import third from "../../img/third.png";

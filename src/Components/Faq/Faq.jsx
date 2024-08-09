@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Faq.css";
+import "./Faq.scss";
 
 export default class Faq extends Component {
   render() {

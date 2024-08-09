@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Serv.css";
+import "./Serv.scss";
 import mikrono from "../../img/mikrono.png";
 import nesakomix from "../../img/nonasekomix.png";
 import kalamush from "../../img/nogrizunov.png";
