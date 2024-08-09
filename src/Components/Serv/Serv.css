@@ -64,7 +64,7 @@
   height: 130px;
   border-radius: 50%;
   position: absolute;
-  top: 470%;
+  top: 485%;
   left: 20%;
 }
 .type_title {
@@ -98,7 +98,7 @@
   line-height: normal;
 }
 .serv_con1 {
-  top: 480%;
+  top: 494%;
   left: 9%;
 }
 .type_cards {
@@ -106,19 +106,19 @@
   flex-wrap: wrap;
 }
 .serv_con2 {
-  top: 480%;
+  top: 494%;
   left: 41.3%;
 }
 .serv_con3 {
-  top: 480%;
+  top: 494%;
   left: 73.6%;
 }
 .serv_con4 {
-  top: 538%;
+  top: 553%;
   left: 9%;
 }
 .serv_con5 {
-  top: 538%;
+  top: 553%;
   left: 41.3%;
 }
 .type_logo2 {
@@ -126,7 +126,7 @@
   height: 130px;
   border-radius: 50%;
   position: absolute;
-  top: 470%;
+  top: 485%;
   left: 53%;
 }
 .type_logo3 {
@@ -134,7 +134,7 @@
   height: 130px;
   border-radius: 50%;
   position: absolute;
-  top: 470%;
+  top: 485%;
   left: 86%;
 }
 .type_logo4 {
@@ -142,7 +142,7 @@
   height: 130px;
   border-radius: 50%;
   position: absolute;
-  top: 530%;
+  top: 543%;
   left: 20%;
 }
 .type_logo5 {
@@ -150,7 +150,7 @@
   height: 130px;
   border-radius: 50%;
   position: absolute;
-  top: 530%;
+  top: 543%;
   left: 53%;
 }
 .garantiya {
@@ -185,6 +185,6 @@
   margin-top: 50px;
 }
 .garantiya_con {
-  top: 620%;
+  top: 635%;
   left: 47%;
 }
