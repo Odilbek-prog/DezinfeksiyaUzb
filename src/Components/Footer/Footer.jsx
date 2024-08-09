@@ -14,14 +14,18 @@ export default class Footer extends Component {
           <img src={logo} alt="" className="navbarimg" />
           <div className="locphone">
             <div className="location" data-aos="fade-right">
-              <img src={location} alt="" className="locationicon" />
-              <p className="location_title">Узбекистан, город Ташкент</p>
-              <img src={arrow} alt="" className="arrow" />
+              <a className="linkf" href="https://maps.google.com/">
+                <img src={location} alt="" className="locationicon" />
+                <p className="location_title">Узбекистан, город Ташкент</p>
+                <img src={arrow} alt="" className="arrow" />
+              </a>
             </div>
             <div className="phone" data-aos="fade-right">
-              <img src={phone} alt="" className="phoneicon" />
-              <p className="phone_title">+998 99 119 99 33</p>
-              <img src={arrow} alt="" className="arrow" />
+              <a href="tel:+991999933" className="linkf">
+                <img src={phone} alt="" className="phoneicon" />
+                <p className="phone_title">+998 99 119 99 33</p>
+                <img src={arrow} alt="" className="arrow" />
+              </a>
             </div>
           </div>
         </div>

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Contact.css";
 import person from "../../img/contact.png";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default class Contact extends Component {
   constructor() {
