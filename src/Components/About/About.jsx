@@ -4,13 +4,11 @@ import "./About.scss";
 export default class About extends Component {
   render() {
     return (
-      <>
-        <div className="about" id="about">
-          <h2 className="about_title" data-aos="flip-down">
-            О нас
-          </h2>
-          <hr />
-        </div>
+      <div className="about" id="about">
+        <h2 className="about_title" data-aos="flip-down">
+          О нас
+        </h2>
+        <hr />
         <div className="row row-cols-1 row-cols-md-3 g-4 ">
           <div className="col">
             <div className="card" data-aos="fade-right">
@@ -100,7 +98,7 @@ export default class About extends Component {
             <i></i>
           </a>
         </div>
-      </>
+      </div>
     );
   }
 }

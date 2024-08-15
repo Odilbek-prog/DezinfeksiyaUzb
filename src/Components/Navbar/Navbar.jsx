@@ -10,17 +10,25 @@ export default class Navbar extends Component {
           <a className="navbar-brand" href="#main">
             <img className="navbarimg" src={logo} alt="" />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <div className="nav">
+            {" "}
+            <select name="" id="select">
+              <option value="1">Русский</option>
+              <option value="2">Ўзбекча</option>
+            </select>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
@@ -44,11 +52,8 @@ export default class Navbar extends Component {
                 </a>
               </li>
             </ul>
-            <select name="" id="select">
-              <option value="1">Русский</option>
-              <option value="2">Ўзбекча</option>
-            </select>
-            <a href="#contact" className="shiny">
+
+            <a href="#contact" className="shiny btnnav">
               Связь
               <i></i>
             </a>

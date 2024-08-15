@@ -1,14 +1,32 @@
 .faq {
   margin-top: 100px;
+  &_hr {
+    margin-left: 25px;
+    width: 95%;
+  }
+  &_desc {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_title {
+    margin-left: 25px;
+  }
 }
-.faq_hr {
-  margin-left: 25px;
-  width: 95%;
+@media only screen and (max-width: 1439px) {
+  .faq {
+    width: 110%;
+  }
+  .accordion {
+    width: 1200px;
+    font-size: 35px;
+  }
 }
-.faq_desc {
-  display: flex;
-  justify-content: space-between;
-}
-.faq_title {
-  margin-left: 25px;
+@media only screen and (max-width: 1000px) {
+  .faq {
+    width: 80%;
+  }
+  .accordion {
+    width: 1200px;
+    font-size: 35px;
+  }
 }

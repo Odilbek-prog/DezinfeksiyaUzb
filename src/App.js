@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Main from "./Components/Main/Main";
@@ -11,7 +12,7 @@ import Contact from "./Components/Contact/Contact";
 export default class App extends Component {
   render() {
     return (
-      <>
+      <div className="cont">
         <Navbar />
         <Main />
         <About />
@@ -19,7 +20,7 @@ export default class App extends Component {
         <Faq />
         <Contact />
         <Footer />
-      </>
+      </div>
     );
   }
 }

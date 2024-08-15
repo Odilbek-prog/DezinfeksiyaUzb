@@ -1,43 +1,63 @@
-.serv_desc_title {
-  font-family: Unbounded;
-  font-size: 52px;
-  font-weight: 700;
-}
-.serv_desc_text {
-  width: 400px;
-  font-size: 20px;
-}
 .serv {
   margin-top: 100px;
-}
-.serv_desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  margin-left: 15px;
-  margin-bottom: 50px;
-}
-.serv_img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.serv_card {
-  margin-left: 20px;
-  padding: 20px 10px;
-  border: 2.3px solid #020c315d;
-  border-radius: 20px;
-  width: 97%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-.serv_card_desc {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  &_con1 {
+    top: 46%;
+    left: 10%;
+  }
+  &_con2 {
+    top: 46%;
+    left: 43.3%;
+  }
+  &_con3 {
+    top: 46%;
+    left: 76.6%;
+  }
+  &_con4 {
+    top: 93%;
+    left: 10%;
+  }
+  &_con5 {
+    top: 93%;
+    left: 43.3%;
+  }
+  &_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    &_title {
+      font-family: Unbounded;
+      font-size: 52px;
+      font-weight: 700;
+    }
+    &_text {
+      width: 400px;
+      font-size: 20px;
+    }
+  }
+  &_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  &_card {
+    margin-left: 20px;
+    padding: 20px 10px;
+    border: 2.3px solid #020c315d;
+    border-radius: 20px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    &_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
 }
 .desc_title {
   width: 770px;
@@ -59,106 +79,12 @@
   line-height: normal;
   padding: 0 10px;
 }
-.type_logo1 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  position: absolute;
-  top: 485%;
-  left: 20%;
-}
-.type_title {
-  color: #020c31;
-  font-family: Unbounded;
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-  margin-left: 15px;
-}
-.type_card {
-  width: 450px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px;
-  margin-left: 15px;
-  margin-top: 25px;
-  border-radius: 20px;
-  background-color: rgb(242, 240, 240);
-}
-.type_desc_title {
-  color: #020c31;
-  font-family: Unbounded;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.serv_con1 {
-  top: 494%;
-  left: 9%;
-}
-.type_cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-.serv_con2 {
-  top: 494%;
-  left: 41.3%;
-}
-.serv_con3 {
-  top: 494%;
-  left: 73.6%;
-}
-.serv_con4 {
-  top: 553%;
-  left: 9%;
-}
-.serv_con5 {
-  top: 553%;
-  left: 41.3%;
-}
-.type_logo2 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  position: absolute;
-  top: 485%;
-  left: 53%;
-}
-.type_logo3 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  position: absolute;
-  top: 485%;
-  left: 86%;
-}
-.type_logo4 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  position: absolute;
-  top: 543%;
-  left: 20%;
-}
-.type_logo5 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  position: absolute;
-  top: 543%;
-  left: 53%;
-}
 .garantiya {
   width: 97%;
   margin-left: 20px;
   margin-top: 100px;
   display: flex;
-  gap: 80px;
+  justify-content: space-around;
   background: radial-gradient(
     498.32% 130.33% at 92.87% 11.25%,
     #33a9ff 0%,
@@ -166,25 +92,321 @@
   );
   padding: 50px;
   border-radius: 25px;
+  &_img {
+    border-radius: 25px;
+  }
+  &_title {
+    max-width: 643px;
+    color: #fafafa;
+    font-family: Unbounded;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 12px;
+    margin-bottom: 50px;
+  }
+  &_desc {
+    position: relative;
+    margin-top: 50px;
+  }
+  &_con {
+    top: 85%;
+    left: 0;
+  }
 }
-.garantiya_img {
-  border-radius: 25px;
+.type {
+  position: relative;
+  &_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_logo2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 39%;
+    left: 55%;
+  }
+  &_logo3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 39%;
+    left: 88%;
+  }
+  &_logo4 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 86%;
+    left: 22%;
+  }
+  &_logo5 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 86%;
+    left: 55%;
+  }
+  &_logo1 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 39%;
+    left: 22%;
+  }
+  &_title {
+    color: #020c31;
+    font-family: Unbounded;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin-left: 15px;
+  }
+  &_card {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: rgb(242, 240, 240);
+  }
+  &_desc_title {
+    color: #020c31;
+    font-family: Unbounded;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
-.garantiya_title {
-  max-width: 643px;
-  color: #fafafa;
-  font-family: Unbounded;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  margin-top: 12px;
-  margin-bottom: 50px;
+@media only screen and (max-width: 1439px) {
+  .serv {
+    width: 135%;
+    &_card {
+      height: 500px;
+      gap: 20px;
+    }
+    &_img {
+      width: 400px;
+      height: 400px;
+      margin-left: 50px;
+    }
+    &_con1 {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 30%;
+      left: 10%;
+    }
+    &_con2 {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 30%;
+      left: 56%;
+    }
+    &_con3 {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 62%;
+      left: 10%;
+    }
+    &_con4 {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 62%;
+      left: 56%;
+    }
+    &_con5 {
+      width: 300px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 95%;
+      left: 10%;
+    }
+  }
+  .desc_title {
+    font-size: 45px;
+    width: 1200px !important;
+  }
+  .desc_text {
+    font-size: 25px;
+    width: 1200px !important;
+  }
+  .type {
+    &_logo1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 25%;
+      left: 32%;
+    }
+    &_logo2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 25%;
+      left: 78%;
+    }
+    &_logo3 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 57%;
+      left: 33%;
+    }
+    &_logo4 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 57%;
+      left: 78%;
+    }
+    &_logo5 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 90%;
+      left: 33%;
+    }
+    &_card {
+      width: 45%;
+      height: 700px;
+    }
+    &_desc_title {
+      font-size: 70px;
+    }
+    &_text {
+      font-size: 30px;
+    }
+  }
 }
-.garantiya_desc {
-  margin-top: 50px;
+@media only screen and (max-width: 1000px) {
+  .serv {
+    width: 100%;
+  }
 }
-.garantiya_con {
-  top: 635%;
-  left: 47%;
+@media only screen and (max-width: 413px) {
+  .serv {
+    width: 100%;
+  }
+  .desc_title {
+    max-width: 770px;
+    font-size: 35px;
+  }
+  .desc_text {
+    max-width: 765px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .type {
+    &_logo1 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 27%;
+      left: 32%;
+    }
+    &_logo2 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 27%;
+      left: 78%;
+    }
+    &_logo3 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 59%;
+      left: 33%;
+    }
+    &_logo4 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 59%;
+      left: 78%;
+    }
+    &_logo5 {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 92%;
+      left: 33%;
+    }
+  }
+  .serv {
+    &_con1 {
+      width: 250px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 30%;
+      left: 12%;
+    }
+    &_con2 {
+      width: 250px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 30%;
+      left: 58%;
+    }
+    &_con3 {
+      width: 250px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 62%;
+      left: 12%;
+    }
+    &_con4 {
+      width: 250px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 62%;
+      left: 58%;
+    }
+    &_con5 {
+      width: 250px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 15px;
+      top: 95%;
+      left: 12%;
+    }
+  }
 }

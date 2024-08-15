@@ -4,40 +4,42 @@
   top: 200px;
   display: flex;
   justify-content: space-around;
-}
-.mainbtn {
-  top: 58%;
-  left: 1%;
-  font-size: 20px;
+  &btn {
+    top: 58%;
+    left: 1%;
+    font-size: 20px;
+  }
+  &-left img {
+    width: 750px;
+    height: 700px;
+    margin-right: 15px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  &_right {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 5%;
+    height: auto;
+  }
 }
 .justimg {
   position: absolute;
 }
-.main-left img {
-  width: 750px;
-  height: 700px;
-  margin-right: 15px;
-  border-radius: 15px;
-  object-fit: cover;
-}
 .third {
   top: 20%;
-  left: 35%;
+  left: 75%;
   z-index: -9;
 }
 .second {
   top: 23%;
-  left: 31%;
+  left: 71%;
   z-index: -9;
 }
 .first {
   top: 21%;
-  left: 31%;
+  left: 71%;
   z-index: -9;
-}
-.main_right {
-  margin-left: 15px;
-  margin-top: 5%;
 }
 .right_title {
   max-width: 650px;
@@ -54,4 +56,58 @@
   font-weight: 500;
   color: #272121;
   margin-top: 50px;
+}
+@media only screen and (max-width: 1439px) {
+  .third {
+    top: 20%;
+    left: 90%;
+    z-index: -9;
+  }
+  .second {
+    top: 23%;
+    left: 86%;
+    z-index: -9;
+  }
+  .first {
+    top: 21%;
+    left: 86%;
+    z-index: -9;
+  }
+  .main {
+    width: 130%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 100%;
+  }
+  .justimg {
+    display: none;
+  }
+  .main-left {
+    display: none;
+  }
+  .main_right {
+    background: linear-gradient(rgba(255, 145, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/herooo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 35px;
+    width: 100%;
+    height: 550px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+  }
+  .right_title {
+    color: #fff;
+  }
+  .right_text {
+    color: #fff;
+  }
+  .mainbtn {
+    top: 78%;
+    left: 2%;
+  }
 }

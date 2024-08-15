@@ -11,7 +11,7 @@ export default class Contact extends Component {
 
     this.state = {
       name: "",
-      number: "",
+      number: "+",
     };
   }
 
@@ -43,6 +43,11 @@ export default class Contact extends Component {
       .catch((error) => {
         console.log(error);
       });
+    e.target.reset();
+    this.setState({
+      name: "",
+      number: "",
+    });
   };
 
   render() {
@@ -70,7 +75,7 @@ export default class Contact extends Component {
           />
           <button className="contact__button">Отправка</button>
         </form>
-        <img src={person} alt="" />
+        <img src={person} alt="" className="hero" />
       </div>
     );
   }

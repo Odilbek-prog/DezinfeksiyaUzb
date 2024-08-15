@@ -1,8 +1,8 @@
 #footer {
   margin-top: 100px;
-}
-#footer hr {
-  border: 1px solid black;
+  & hr {
+    border: 1px solid black;
+  }
 }
 .locationicon,
 .phoneicon {
