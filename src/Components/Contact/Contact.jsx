@@ -38,15 +38,14 @@ export default class Contact extends Component {
       },
     })
       .then((data) => {
-        alert("Successful");
+        toast("Success");
       })
       .catch((error) => {
         console.log(error);
       });
-    e.target.reset();
     this.setState({
       name: "",
-      number: "",
+      number: "+",
     });
   };
 
@@ -68,12 +67,13 @@ export default class Contact extends Component {
             onChange={this.handleValue}
             value={this.state.number}
             name="number"
-            type="text"
+            type="number"
             placeholder="+998-xx-xxx-xx-xx"
             className="inp"
             required
           />
           <button className="contact__button">Отправка</button>
+          <ToastContainer />
         </form>
         <img src={person} alt="" className="hero" />
       </div>
